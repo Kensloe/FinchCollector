@@ -1,4 +1,11 @@
 from django.db import models
+from django.urls import reverse
+
+MEALS = (
+    ('B', 'Breakfast'),
+    ('L', 'Lunch'),
+    ('D', 'Dinner')
+)
 
 # Create your models here.
 class Finch(models.Model):
