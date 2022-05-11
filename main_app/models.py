@@ -9,3 +9,7 @@ class Finch(models.Model):
     # TextField will create a <textarea>
     description = models.TextField(max_length=250)
     age = models.IntegerField()
+    
+    #new code below
+    def __str__(self):
+     return f'{self.name} ({self.id})'
